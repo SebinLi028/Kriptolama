@@ -40,7 +40,7 @@ private void ceaser_Click(object sender, EventArgs e)
 
     //DECRYPTION
     metin = Interaction.InputBox("Şifrelenmiş Metni Giriniz.", "Ceaser's Cipher Decryption");
-    Math.Abs(int.Parse(Interaction.InputBox("Şifreleme Anahtarınız Giriniz.\nNegatif Sayı Girmeyiniz.", "Ceaser's Cipher Decryption")));
+    key = Math.Abs(int.Parse(Interaction.InputBox("Şifreleme Anahtarınız Giriniz.\nNegatif Sayı Girmeyiniz.", "Ceaser's Cipher Decryption")));
     pmetin = metin.ToCharArray(); //metni parçalara böl ve char tipinde dizi oluştur
    
     foreach (char c in pmetin)
